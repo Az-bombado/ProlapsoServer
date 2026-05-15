@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0f1115;
+    color: #ffffff;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 24px;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+}
+
+.header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    margin-bottom: 24px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin-bottom: 6px;
+}
+
+.header p {
+    color: #8b8f98;
+}
+
+.card {
+    background: #181b20;
+
+    border: 1px solid #252932;
+
+    border-radius: 24px;
+
+    padding: 24px;
+
+    box-shadow:
+            0 10px 40px rgba(0,0,0,0.4);
+}
+
+label {
+    display: block;
+
+    margin-bottom: 10px;
+    margin-top: 18px;
+
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    color: #c7cad1;
+}
+
+select,
+textarea {
+    width: 100%;
+
+    background: #111317;
+
+    border: 1px solid #2b313c;
+
+    border-radius: 16px;
+
+    color: white;
+
+    padding: 14px;
+
+    font-size: 0.95rem;
+
+    transition: 0.2s;
+}
+
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #5865f2;
+}
+
+textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+.tools {
+    margin-top: 24px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.tool-group span {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #aeb3bd;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.tool-group {
+    background: #111317;
+
+    border: 1px solid #252932;
+
+    border-radius: 18px;
+
+    padding: 18px;
+}
+
+.tool-btn {
+    background: #23272f;
+
+    border: 1px solid #2f3542;
+
+    color: white;
+
+    padding: 12px 16px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    transition: 0.2s;
+}
+
+.tool-btn:hover {
+    background: #5865f2;
+    transform: translateY(-1px);
+}
+
+#send-btn {
+    width: 100%;
+
+    margin-top: 26px;
+
+    border: none;
+
+    background: #5865f2;
+
+    color: white;
+
+    padding: 16px;
+
+    border-radius: 18px;
+
+    font-size: 1rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#send-btn:hover {
+    background: #4752c4;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+
+    .card {
+        padding: 18px;
+    }
+
+    .tool-btn {
+        width: 100%;
+    }
+
+}

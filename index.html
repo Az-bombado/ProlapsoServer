@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Webhook Panel</title>
+
+    <link rel="stylesheet" href="config.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>Discord Webhook</h1>
+        <p>Painel rápido para envio de mensagens</p>
+    </div>
+
+    <div class="card">
+
+        <label>Selecionar Webhook</label>
+
+        <select id="webhook-select">
+            <option value="ProlapsosAnal">
+                ProlapsoAnal
+            </option>
+        </select>
+
+        <label>Mensagem</label>
+
+        <textarea
+            id="message-input"
+            placeholder="Digite sua mensagem..."
+        ></textarea>
+
+        <div class="tools">
+
+            <div class="tool-group">
+
+                <span>Menções</span>
+
+                <button
+                    type="button"
+                    class="tool-btn mention-btn"
+                    id="everyone-btn"
+                >
+                    @everyone
+                </button>
+
+                <button
+                    type="button"
+                    class="tool-btn mention-btn"
+                    data-value="@here"
+                >
+                    @here
+                </button>
+
+            </div>
+
+            <div class="tool-group">
+
+                <span>Mensagens rápidas</span>
+
+                <button
+                    type="button"
+                    class="tool-btn quick-btn dynamic-everyone"
+                    data-message="Hey {everyone} vamos jogar Algo?"
+                >
+                    Convite Para Jogar Algo
+                </button>
+
+                <button
+                    type="button"
+                    class="tool-btn quick-btn"
+                    data-message="Procurando pessoas para jogar (Jogo), preciso de (quantas pessoas) pessoas!"
+                >
+                    Procurando Time
+                </button>
+
+                <button
+                    type="button"
+                    class="tool-btn quick-btn"
+                    data-message="Aviso importante para {everyone}, por favor leiam!
+(!DIGITE AQUI O AVISO IMPORTANTE!)"
+                >
+                    Avisos Importantes!
+                </button>
+
+            </div>
+
+        </div>
+
+        <button id="send-btn">
+            Enviar Mensagem
+        </button>
+
+    </div>
+
+</div>
+
+<script src="Script.js"></script>
+
+</body>
+</html>
